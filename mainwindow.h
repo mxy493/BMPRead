@@ -42,8 +42,8 @@ private:
     QImage srcImage;
     QImage paintImage;
     MyImage mySrcImage;
-    QString filePath;
-    QString fileSavePath;
+    QString filePath;//文件路径
+    QString fileSavePath;//文件保存路径
     int gaussKerelSize=3;
     double gaussSigma=0.8;
     double gama=0.8;

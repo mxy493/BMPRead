@@ -17,7 +17,6 @@ struct BMPHead
     unsigned int resvered0=0;//保留字，2字节，为零
     unsigned int resvered1=0;//保留字，2字节，为零
     unsigned int offBit=1078;//4字节，文件起始位置到图像像素数据的字节偏移量
-
 };
 //BMP信息头结构体
 struct BMPInfo
@@ -87,14 +86,10 @@ private:
     BMPHead imageHead;
     BMPInfo imageInfo;
     vector<MyRGB> colorTable;//颜色表
-    unsigned int** pixel;//像素数据
+    unsigned int** pixel=nullptr;//像素数据
     bool isNull=true;//用于判断图像是不是空的，空的则不能访问
     //用于判断图像是不是倒立的，说明图像存储是从上到下还是从下到上的，大多数BMP图像时倒立的，高度为正值
     bool isInverse=true;
-
-
 };
-
-
 
 #endif // MYIMAGE_H

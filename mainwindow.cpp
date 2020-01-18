@@ -6,7 +6,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
 }
 
 MainWindow::~MainWindow()
@@ -20,12 +19,11 @@ void MainWindow::paintEvent(QPaintEvent *paintEvent)
 #if USE_QIMAGE
     painter.drawImage(10,40,paintImage);
 #else
-
     //painter.drawImage(10,40,srcImage);
     if(filePath!="")
     {
         //MyImage myimage(filePath.toStdString());
-       // mySrcImage.load(filePath.toStdString());
+        // mySrcImage.load(filePath.toStdString());
         for(int i=0;i<mySrcImage.width();i++)
         {
             for(int j=0;j<mySrcImage.height();j++)
