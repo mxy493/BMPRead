@@ -5,7 +5,7 @@
 
 以Photoshop为例，打开任意一张图片，点击图像，图像大小，将图像大小调小至不超过512×512像素（建议），然后点击图像，模式，灰度，会提示信息丢失，继续点击“扔掉”，这时候图片已经处理好了，然后点击文件，存储为，保存类型选择BMP格式，然后点击“保存”，注意这里一定要是Windows，8位，最后点击确定即可。
 
-![](D:\mxy\Documents\GitHub\BMPRead\8bmpConvert.gif)
+![8bmpConvert](8bmpConvert.gif)
 
 该程序支持下列功能：
 
